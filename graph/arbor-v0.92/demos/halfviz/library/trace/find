@@ -1,0 +1,11 @@
+nmap -sP $1 | awk 'NR%2==1 {print $5;}' | head -n -1 | sed 1d > in
+echo "" > info
+while read i; do traceroute "$i" | tee rou; 
+cat rou | awk '{print $3;}' > route;
+python gen.py >>info;
+cd ..
+./sc.sh out
+cd trace
+done < in
+cd ..
+./sc.sh out

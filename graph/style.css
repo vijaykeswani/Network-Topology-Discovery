@@ -1,0 +1,208 @@
+/*
+Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 3.0.0pr2 ??? TODO: fill in the right version so that we can track changes.
+*/
+html{color: #000; background: #fff;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, p, blockquote, th, td, input, textarea{margin: 0; padding: 0;}
+table{border-collapse: collapse; border-spacing: 0;}
+fieldset, img{border: 0;}
+address, caption, cite, code, dfn, th, var, optgroup{font-style: inherit; font-weight: inherit;}
+del, ins{text-decoration: none;}
+li{list-style: none;}
+caption, th{text-align: left;}
+h1, h2, h3, h4, h5, h6{font-size: 100%; font-weight: normal;}
+q: before, q: after{content: "";}
+abbr, acronym{border: 0; font-variant: normal;}
+sup{vertical-align: baseline;}
+sub{vertical-align: baseline;}
+legend{color: #000;}
+input, button, textarea, select, optgroup, option{font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit;}
+input, button, textarea, select{*font-size: 100%;}
+
+
+
+
+@font-face {
+  font-family: 'Philosopher';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Philosopher'), url(http://themes.googleusercontent.com/static/fonts/philosopher/v4/OttjxgcoEsufOGSINYBGLbrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+
+body {
+   line-height: 20px;
+   font-family: Helvetica, sans-serif;
+   text-rendering: optimizeLegibility;
+}
+
+.gist {
+   font-size: 13px;
+   line-height: 15px;
+}
+
+hr {
+   height: 1px;
+   width: 100%;
+   border: none;
+   background-color: white;
+   margin: 20px 0;
+}
+
+a {
+    color: #BC4026;
+    padding: 3px;
+}
+a:hover {
+    background-color: #FCF8CB;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+img {
+   max-width: 600px;
+}
+
+ul {
+   list-style: disc;
+   margin-left: 30px;
+   margin-bottom: 20px;
+}
+
+li {
+   padding-left: 5px;
+   list-style: disc;
+   font-size: .9em;
+}
+
+aside {
+   background-color: #333;
+   color: white;
+   position: fixed;
+   width: 180px;
+   height: 100%;
+   top: 0;
+   left: 0;
+   padding: 30px;
+   font-size: 12px;
+   border-right: 1px solid black;
+   -moz-box-shadow: inset -10px 0 30px black;
+   -webkit-box-shadow: inset -10px 0 30px black;
+   box-shadow: inset -10px 0 30px black;
+}
+
+aside h1 a {
+   display: block;
+   font-size: 15px;
+   padding: 0;
+   margin: 20px 0;
+   color: white;
+}
+aside h1 a:hover {
+   background-color: transparent;
+   border-radius: 0px;
+   text-decoration: underline;
+}
+
+article {
+   display: block;
+   width: 100%;
+   //margin: 40px auto 40px 290px;
+   color: black;
+	overflow: scroll;
+}
+
+h3 {
+   text-decoration: underline;
+}
+
+h2 {
+   margin-top: 40px;
+}
+
+h2,
+article header h1 {
+   font-family: 'Philosopher', arial, serif;
+   font-size: 28px;
+   font-weight: bold;
+   color: #333;
+   line-height: 34px;
+}
+
+p {
+    margin: 12px;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.date {
+   color: gray;
+   font-size: .5em;
+}
+
+pre code { 
+   font-size: 13px;
+   line-height: 15px;
+   border: 1px solid gray;
+   -webkit-border-radius: 1px;
+   -moz-border-radius: 1px;
+   border-radius: 1px;
+   margin-bottom: 20px;
+}
+
+/* FigurePool logo */
+
+.figurepool {
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+   font-weight: bold;
+   vertical-align: baseline;
+   font-size: 20px;
+   line-height: 22px;
+   color: black;
+}
+.figurepool span {
+   font-size: .75em;
+   color: #7A9B23;
+}
+.figurepool.dark {
+   color: white;
+}
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Yanone Kaffeesatz Bold'), local('YanoneKaffeesatz-Bold'), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/We_iSDqttE3etzfdfhuPRbJjSLMfVFmTspsxH0yGxjj3rGVtsTkPsbDajuO5ueQw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Yanone Kaffeesatz Light'), local('YanoneKaffeesatz-Light'), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/We_iSDqttE3etzfdfhuPRbHVephy08vG3A_n649omsL3rGVtsTkPsbDajuO5ueQw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Yanone Kaffeesatz ExtraLight'), local('YanoneKaffeesatz-ExtraLight'), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/We_iSDqttE3etzfdfhuPRUDqw7A1uQWuQSM-rfHaMOr3rGVtsTkPsbDajuO5ueQw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/YDAoLskQQ5MOAgvHUQCcLQa6gm6bS00u2Qn-iPLo1Go.woff) format('woff');
+}
+
+@media (max-width: 700px) {
+   aside {
+      position: static;
+      width: 100%;
+      height: auto;
+   }
+   article {
+      margin-left: auto;
+   }
+}
+
+

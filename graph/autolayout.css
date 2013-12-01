@@ -1,0 +1,82 @@
+#paper {
+   border: 1px solid gray;
+   position: relative;
+   width: 100%;
+   height: 100%;
+   overflow: scroll;
+   margin-top: 6px;
+}
+#adjacency-list {
+   width: 690px;
+   height: 140px;
+   font-family: monospace;
+   font-size: 11px;
+   padding: 5px;
+}
+#toolbar {
+	display:none;
+}
+#btn-layout {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 14px;
+   color: #323232;
+   padding: 10px 28px;
+   background: -moz-linear-gradient(
+      top,
+	 #ffffff 0%,
+	 #e1e1e1 50%,
+	 #c8c8c8);
+   background: -webkit-gradient(
+      linear, left top, left bottom, 
+	 from(#ffffff),
+	    color-stop(0.50, #e1e1e1),
+	       to(#c8c8c8));
+   -moz-border-radius: 1px;
+   -webkit-border-radius: 1px;
+   border-radius: 1px;
+   border: 1px solid #969696;
+   -moz-box-shadow:
+      0px 1px 3px rgba(000,000,000,0.5),
+	 inset 0px 0px 0px rgba(100,100,100,0.6);
+   -webkit-box-shadow:
+      0px 1px 3px rgba(000,000,000,0.5),
+	 inset 0px 0px 0px rgba(100,100,100,0.6);
+   box-shadow:
+      0px 1px 3px rgba(000,000,000,0.5),
+	 inset 0px 0px 0px rgba(100,100,100,0.6);
+   text-shadow:
+      1px 1px 3px rgba(255,255,255,0.8),
+	 10px 10px 0px rgba(255,255,255,0);
+   cursor: pointer;
+}
+#btn-layout:hover {
+   -moz-box-shadow:
+      0px 3px 5px rgba(000,000,000,0.5),
+	 inset 0px 0px 0px rgba(100,100,100,0.6);
+   -webkit-box-shadow:
+      0px 3px 5px rgba(000,000,000,0.5),
+	 inset 0px 0px 0px rgba(100,100,100,0.6);
+   box-shadow:
+      0px 3px 5px rgba(000,000,000,0.5),
+	 inset 0px 0px 0px rgba(100,100,100,0.6);
+}
+#btn-layout:active {
+   background: -moz-linear-gradient(
+      top,
+	 #c8c8c8 0%,
+	 #e1e1e1 50%,
+	 #ffffff);
+   background: -webkit-gradient(
+      linear, left bottom, left top, 
+	 from(#ffffff),
+	    color-stop(0.50, #e1e1e1),
+	       to(#c8c8c8));
+}
+
+.element.basic.Rect rect {
+   /* Webkit */
+   -webkit-svg-shadow: 2px 2px 5px gray;
+   /* FF */
+   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='dropshadow' width='150%' height='150%'><feGaussianBlur in='SourceAlpha' stdDeviation='4'/><feOffset dx='3' dy='3' result='offsetblur'/><feFlood flood-color='gray' /><feComposite in2='offsetblur' operator='in' /><feMerge><feMergeNode /><feMergeNode in='SourceGraphic' /></feMerge></filter></svg>#dropshadow");
+}
+
